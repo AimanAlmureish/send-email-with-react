@@ -4,7 +4,7 @@ use PHPMailer\PHPMailer\PHPMailer;
 use PHPMailer\PHPMailer\Exception;
 
 // get refferer server
-if($_SERVER['HTTP_REFERER'] === "http://localhost:3000/"){
+if($_SERVER['HTTP_REFERER'] === "http://snailsend.herokuapp.com/"){
     // extract the data from $_POST
     $name = isset($_GET['name']) ? $_GET['name'] : null;
     $message = isset($_GET['message']) ? $_GET['message'] : null;
